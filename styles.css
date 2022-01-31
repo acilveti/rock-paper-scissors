@@ -21,6 +21,43 @@ div {
 #header {
     background-color: rgb(172, 105, 6);
     color:black;
-    flex: 1 1 0
+    flex: 0 1 0;
+    font-family: OCR A Std, monospace ;
+    font-size: 50px;
+    flex-direction: column;
+    
+}
+
+#playground {
+    display:flex;
+    flex-direction: column;
+}
+
+#footer {
+    background-color: black;
+    color:whitesmoke;
+    flex: 0 1 0
+}
+
+.btn {
+    height: 400px;
+    width: 400px;
+}
+
+#buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex: 1;
+}
+
+.sign {
+    font-size: 300px;
+}
+
+#playground .text {
+    height:30px;
+    display:block;
 }
 
