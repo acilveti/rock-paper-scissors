@@ -57,10 +57,34 @@ div {
 }
 
 #playground .text {
-    display: block;
-    height: 30px;
-    margin: 30px;
-    flex: 0;
+    display: flex;
+    flex:0;
+    margin-top:20px;
+    margin-bottom: 0px;
+    font-size: 30px;
     
 }
 
+.round {
+    display:flex;
+    flex-direction: column;
+
+}
+.round .sign{
+    font-size: 80px;
+}
+
+.round .btn {
+    height: 100px;
+    width: 100px;
+}
+
+#scoreboard {
+    
+    flex: 1;
+}
+
+#scoreboardtext {
+    height: 30px;
+    flex: 0 0 0;
+}
