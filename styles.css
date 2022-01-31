@@ -48,8 +48,8 @@ div {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
-    flex: 1;
+    gap: 30px;
+    flex: 3;
 }
 
 .sign {
@@ -57,7 +57,10 @@ div {
 }
 
 #playground .text {
-    height:30px;
-    display:block;
+    display: block;
+    height: 30px;
+    margin: 30px;
+    flex: 0;
+    
 }
 
