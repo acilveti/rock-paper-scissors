@@ -82,9 +82,11 @@ div {
 #scoreboard {
     
     flex: 1;
+    
 }
 
 #scoreboardtext {
     height: 30px;
+    flex-direction: column;
     flex: 0 0 0;
 }

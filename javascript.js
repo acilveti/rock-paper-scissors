@@ -1,3 +1,12 @@
+let playerScore = 0;
+let compScore = 0;
+
+const player = document.querySelector("#player-score");
+player.textContent = `Player Score: ${playerScore}`;
+
+const computer = document.querySelector("#comp-score");
+computer.textContent = `Computer Score: ${compScore}`;
+
 const buttons = document.querySelectorAll('#buttons .btn');
 
 buttons.forEach(button => button.addEventListener('click',()=>{duelPlay(button.id)}));
@@ -9,7 +18,9 @@ function computerPlay (){
     const random_selection = computer_options[Math.floor(Math.random() * computer_options.length)];
     return (random_selection);
 }
+function scoreCount(last_winner){
 
+}
 function duelPlay(player_selection){
     const computer_selection = computerPlay ()
     //const player_selection = computerPlay ()    //change later
@@ -50,6 +61,16 @@ function duelPlay(player_selection){
             winner = undefined 
         }
     }
+
+    if (winner === "player"){
+        playerScore++;
+    }
+    else if (winner === "computer"){
+        compScore++;
+    }
+
+    player.textContent = `Player Score: ${playerScore}`;
+    computer.textContent = `Computer Score: ${compScore}`;
 
     return winner
 
