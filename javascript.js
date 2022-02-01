@@ -1,3 +1,8 @@
+const buttons = document.querySelectorAll('#buttons .btn');
+
+buttons.forEach(button => button.addEventListener('click',()=>{duelPlay(button.id)}));
+
+
 function computerPlay (){
     console.log("computerPlay")
     const computer_options = ["rock", "scissor", "paper"];
@@ -5,9 +10,9 @@ function computerPlay (){
     return (random_selection);
 }
 
-function duelPlay(){
+function duelPlay(player_selection){
     const computer_selection = computerPlay ()
-    const player_selection = computerPlay ()    //change later
+    //const player_selection = computerPlay ()    //change later
 
     console.log("computer selects %s. and person selects %s.",computer_selection, player_selection)
     
@@ -49,3 +54,9 @@ function duelPlay(){
     return winner
 
 }
+
+
+
+
+
+
